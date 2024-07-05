@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "countryName": "Thailand",
+        "spotName": "Deluxe Suite",
+        "img": "https://i.ibb.co/1q53NpC/c1.jpg",
+        "description": "Our Standard Room offers comfort and convenience at an affordable price. Perfect for solo travelers or couples, it features all the essential amenities for a relaxing stay",
+        "cost": "15 USD for foreign visitors",
+        "time": "November to February"
+    },
+    {
+        "id": 2,
+        "countryName": "Vietnam",
+        "spotName": "Standard Room",
+        "img": "https://i.ibb.co/cc3H6W9/r2.jpg",
+        "description": "Our Standard Room offers comfort and convenience at an affordable price. Perfect for solo travelers or couples, it features all the essential amenities for a relaxing stay.",
+        "cost": "50 USD for a cruise",
+        "time": "October to April"
+    },
+    {
+        "id": 3,
+        "countryName": "South Korea",
+        "spotName": "Cityview Deluxe Room",
+        "img": " https://i.ibb.co/SNHT5vj/r3.jpg",
+        "description": "Enjoy stunning panoramic views of the city skyline from our Cityview Deluxe Room. Featuring modern amenities and elegant decor, this spacious room is perfect for both business and leisure travelers.",
+        "cost": "3 USD for adults",
+        "time": "March to May, September to November"
+    },
+    {
+        "id": 4,
+        "countryName": "Philippines",
+        "spotName": "Executive Suite",
+        "img": "https://i.ibb.co/w49Y7TB/r4.png",
+        "description": "The Chocolate Hills are a geological formation in the Bohol province of the Philippines. There are at least 1,260 hills but there may be as many as 1,776 hills spread over an area of more than 50 square kilometers. They are covered in green grass that turns brown (like chocolate) during the dry season, hence the name.",
+        "cost": "2 USD for viewing deck access",
+        "time": "December to May"
+    },
+    {
+        "id": 5,
+        "countryName": "Cityview Deluxe Room",
+        "spotName": "Cityview Deluxe Room",
+        "img": "https://i.ibb.co/1rTcqvn/r5.jpg",
+        "description": "Experience the epitome of luxury in our Executive Suite. With a separate living area, plush furnishings, and premium amenities, this suite offers unparalleled comfort and style.",
+        "cost": "Varies widely, approximately 30,000 to 45,000 USD for a guided climb",
+        "time": "April to May"
+    }
+]
