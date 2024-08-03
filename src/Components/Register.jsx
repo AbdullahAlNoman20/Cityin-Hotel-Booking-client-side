@@ -23,7 +23,8 @@ const Register = () => {
     const photo = e.target.photo.value;
     const password = e.target.password.value;
 
-    console.log(name,photo)
+    const users ={name,email,photo,password}
+    // console.log(name, photo, users);
 
     if (password.length < 6) {
       setError("Password less then 6 character");
@@ -37,60 +38,51 @@ const Register = () => {
       setError("Password has no lowercase letter");
       return;
     }
-    // Resat Error
-    setError("");
-    setRegisterError("");
 
-    console.log(name, email, photo, password);
+    fetch('https://edu-bd-server.vercel.app/users',{
+      method: 'POST',
+      headers:{
+          'content-type': 'application/json'
+      },
+      body: JSON.stringify(users)
+  })
+  .then(req =>req.json())
+  .then(data =>{
+      console.log(data)
+  })
+  // Resat Error
+  setError("");
+  setRegisterError("");
 
-    // 	// Create new user
-    // registerUser(email, password)
-    //   .then((result) => {
-    //     console.log(result);
-    //     toast.success("Welcome to Check-In");
-    //     e.target.reset();
-    //     updateProfile(name, photo)
-    //     .then(()=>{
-          
-    //     })
-    //     .catch((error)=>{
-    //       console.error(error.message);
-    //     })
-    //     navigateHome("/");
-        
-    //   })
+  // console.log(name, email, photo, password);
 
-    //   .catch((error) => {
-    //     console.error(error);
-    //     setRegisterError(error.message);
-    //     toast.warn(error.message);
-    //   });
+  
+  registerUser(email, password)
+    .then((result) => {
+      updateUserProfile(name, photo)
+        .then((resul) => {
+          console.log(resul);
+          toast.success("Welcome to Mount Ride");
+          navigateHome("/");
+        })
+        .catch((error) => {
+          console.log(error.message);
+          toast.warn(error.message);
+        });
+    })
+    .catch((error) => {
+      console.log(error);
+      toast.warn(error.message);
+    });
 
-      registerUser(email, password)
-            .then(result => {
-              updateUserProfile(name,photo)
-                .then(resul=>{
-                    
-                    console.log(resul)
-                    toast.success("Welcome to Mount Ride");
-                    navigateHome("/");
-
-                })
-                .catch(error=>{
-                    console.log(error.message)
-                    toast.warn(error.message);
-                })
-            })
-            .catch(error => {
-                console.log(error)
-                toast.warn(error.message);
-            })
-  };
+};
+  
+ 
 
   return (
     <div className="flex justify-center py-5 bg-yellow-800">
       <Helmet>
-        <title>Check-In | Register </title>
+        <title>Education Bangladesh | Register Page </title>
       </Helmet>
       <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
         <div className="mb-8 text-center">
@@ -98,7 +90,7 @@ const Register = () => {
             Register Now
           </h1>
           <p className="text-sm dark:text-gray-600">
-            Start a new Journey with Check-in{" "}
+            Start a new Journey with Edu BD
           </p>
         </div>
         <form
@@ -162,6 +154,42 @@ const Register = () => {
                 className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800"
               />
               {error && <p className="text-red-600">{error}</p>}
+            </div>
+            {/* Role Select */}
+            <div className=" flex gap-3">
+              <div className="form-control">
+                <label className="label cursor-pointer">
+                  <span className="label-text">Student</span>
+                  <input
+                    type="radio"
+                    name="student"
+                    className="radio checked:bg-red-500 ml-1"
+                    defaultChecked
+                  />
+                </label>
+              </div>
+              <div className="form-control">
+                <label className="label cursor-pointer">
+                  <span className="label-text">Tutor</span>
+                  <input
+                    type="radio"
+                    name="tutor"
+                    className="radio checked:bg-blue-500 ml-1"
+                    defaultChecked
+                  />
+                </label>
+              </div>
+              <div className="form-control">
+                <label className="label cursor-pointer">
+                  <span className="label-text">Admin</span>
+                  <input
+                    type="radio"
+                    name="admin"
+                    className="radio checked:bg-blue-500 ml-1"
+                    defaultChecked
+                  />
+                </label>
+              </div>
             </div>
           </div>
           <div className="space-y-2">

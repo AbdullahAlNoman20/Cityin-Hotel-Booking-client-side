@@ -39,7 +39,7 @@ const Nav = () => {
             </div>
             <ul
               tabIndex={0}
-              className="text-black menu menu-sm dropdown-content mt-3 z-[10] p-2 rounded-box w-52"
+              className="text-white menu menu-sm dropdown-content mt-3 z-[10] p-2 rounded-box w-52"
             >
               <NavLink to="/">
               <li>
@@ -62,30 +62,24 @@ const Nav = () => {
                 </a>
               </li>
             </NavLink>
-            <NavLink to="/Rooms">
+            <NavLink to="/s_dashboard">
               <li>
                 <a>
-                  Rooms 
+                Dashboard 
                 </a>
               </li>
             </NavLink>
-            <NavLink to="/MyBooking">
-              <li>
-                <a>
-                  My Booking
-                </a>
-              </li>
-            </NavLink>
+            
             </ul>
           </div>
           <a className="text-xl font-bold lg:text-2xl lg:font-bold">
-            City<span className="text-red-700 mr-2">In</span>
+            Edu<span className="text-red-700 mr-2">BD</span>
           </a>
 
           <span className="hidden lg:block" style={{ color: "black", fontWeight: "bold" }}>
             {/* Style will be inherited from the parent element */}
             <Typewriter
-              words={["Comfortable", "Luxury", "Peach", "Relax"]}
+              words={["Education", "Knowledge", "Cost Free", "Study"]}
               loop={""}
               cursor
               cursorStyle="🔍"
@@ -123,35 +117,28 @@ const Nav = () => {
                 </a>
               </li>
             </NavLink>
+            <NavLink to="/s_dashboard">
+              <li>
+                <a>
+                A Dashboard 
+                </a>
+              </li>
+            </NavLink>
+            <NavLink to="/t_dashboard">
+              <li>
+                <a>
+                T Dashboard 
+                </a>
+              </li>
+            </NavLink>
+            <NavLink to="/a_dashboard">
+              <li>
+                <a>
+                S Dashboard 
+                </a>
+              </li>
+            </NavLink>
 
-            <NavLink to="/Rooms">
-              <li>
-                <a>
-                  Rooms 
-                </a>
-              </li>
-            </NavLink>
-            <NavLink to="/MyBooking">
-              <li>
-                <a>
-                  My Booking
-                </a>
-              </li>
-            </NavLink>
-            {/* <NavLink to="/myList">
-              <li>
-                <a>
-                  My List
-                </a>
-              </li>
-            </NavLink> */}
-            <NavLink to="/addSpot">
-              <li>
-                <a>
-                  Add Comment 
-                </a>
-              </li>
-            </NavLink>
           </ul>
         </div>
 

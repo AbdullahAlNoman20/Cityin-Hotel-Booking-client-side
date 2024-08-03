@@ -1,26 +1,25 @@
 import "animate.css";
-import Countries from "./Countries";
+
 import Service from "./Service";
-import UserReview from "../Components11/UserReview";
-import About from "./About";
-import { NavLink } from "react-router-dom";
+// import UserReview from "../Components11/UserReview";
+
+import Map from "../Components11/Map";
+import Tutors from "../Components12/Tutors";
 
 const Estates = () => {
   return (
     <div className=" lg:p-5 pb-5">
       <div className="flex justify-center items-center flex-col p-14">
         <h1 className="font-bold text-4xl animate__animated animate__bounce mb-5">
-          | Explore Your Sanctuary in the CityIn |
+          | Explore Our Courses |
         </h1>
+        <p className="font-bold">Study Session for 2024.</p>
         <p className="text-justify">
-          Indulge in unparalleled comfort and sophistication with our diverse
-          selection of rooms and suites at Cityin. Each space is meticulously
-          designed to offer a unique retreat, where modern amenities blend
-          seamlessly with elegant decor to create a haven tailored to your every
-          need. Whether you're seeking a cozy room for a weekend getaway or a
-          spacious suite for an extended stay, our accommodations promise a
-          luxurious escape in the heart of the city. Explore our range of
-          options and find the perfect sanctuary to call your own at Cityin.
+          Dive into our diverse range of courses designed to cater to every
+          learner's needs. From foundational subjects to advanced
+          specializations, our expert-led curriculum ensures you gain the
+          knowledge and skills necessary for success. Start your learning
+          journey with EduBD and achieve your educational goals.
         </p>
       </div>
       <div className="">
@@ -41,8 +40,10 @@ const Estates = () => {
                 <br className="sm:hidden" /> 30% Off.
               </h2>
               <div className="space-x-2 text-center py-2 lg:py-0">
-                <span>Book Now for 1 Room Get 1 Room Free! Use code:</span>
-                <span className="font-bold text-lg">City-24</span>
+                <span>
+                  Register Now for 1 Course Get 1 Course Free! Use code:
+                </span>
+                <span className="font-bold text-lg">edu-bd-24</span>
               </div>
               <a
                 href="#"
@@ -56,6 +57,11 @@ const Estates = () => {
         </div>
       </div>
 
+{/* Tutors */}
+      <section>
+          <Tutors></Tutors>
+      </section>
+
       {/* Countries Section */}
       {/* <Countries></Countries> */}
 
@@ -68,21 +74,18 @@ const Estates = () => {
             data-aos="fade-right"
           >
             <h2 className="text-4xl font-bold leading-tight lg:text-5xl">
-              Get in Touch with CityIn
+              Get in Touch with EduBD
             </h2>
             <div className="dark:text-gray-600 text-justify">
-              Our "Get in Touch" section is your gateway to seamless
-              communication with Cityin. Whether you have inquiries about room
-              reservations, special requests, or feedback on your stay, we're
-              here to assist you every step of the way. Reach out to our
-              dedicated team via phone, email, or through our online contact
-              form, and experience our commitment to providing exceptional
-              service. Your satisfaction is our priority, and we look forward to
-              hearing from you soon.
+              We'd love to hear from you! Whether you have questions, feedback,
+              or need assistance, our team is here to help. Reach out to us
+              through our contact form, email, or phone, and we’ll get back to
+              you as soon as possible. Let's connect and make your educational
+              experience even better with EduBD.
             </div>
           </div>
           <img
-            src="https://i.ibb.co/LdxJsFz/Dhaka-1.jpg"
+            src="https://i.ibb.co/9257p0q/2b-P4p-Jr4w-Vimq-CWj-Yim-XJe2cn-Cgn9-TYj-DCy-K2-UBWPEN.png"
             alt=""
             className="p-6 h-52 md:h-64"
             data-aos-duration="2000"
@@ -134,13 +137,22 @@ const Estates = () => {
         </form>
       </div>
       <div className="my-10">
-    {/* Click For Review Section */}
-    <div className="flex justify-center">
-      <NavLink to="/Review">
-      <button className="btn btn-wide btn-accent text-white font-bold ">Click For View Reviews</button>
-      </NavLink>
-      
-    </div>
+        {/* Click For Review Section */}
+        {/* <div className="flex justify-center">
+          <NavLink to="/Review">
+            <button className="btn btn-wide btn-accent text-white font-bold ">
+              Click For View Reviews
+            </button>
+          </NavLink>
+        </div> */}
+
+
+<div className="">
+  <Map></Map>
+</div>
+
+
+
       </div>
     </div>
   );

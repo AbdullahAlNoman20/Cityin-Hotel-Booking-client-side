@@ -1,47 +1,47 @@
 [
     {
         "id": 1,
-        "countryName": "Thailand",
-        "spotName": "Deluxe Suite",
-        "img": "https://i.ibb.co/1q53NpC/c1.jpg",
-        "description": "Our Standard Room offers comfort and convenience at an affordable price. Perfect for solo travelers or couples, it features all the essential amenities for a relaxing stay",
-        "cost": "15 USD for foreign visitors",
-        "time": "November to February"
+        "countryName": "Introduction to Computer Science",
+        "spotName": "Dr. Ahsanullah Chowdhury",
+        "img": "https://i.ibb.co/9257p0q/2b-P4p-Jr4w-Vimq-CWj-Yim-XJe2cn-Cgn9-TYj-DCy-K2-UBWPEN.png",
+        "description": "This course provides a comprehensive introduction to the fundamentals of computer science, covering topics such as algorithms, data structures, and basic programming.",
+        "cost": "5000 BDT",
+        "time": "12 weeks"
     },
     {
         "id": 2,
-        "countryName": "Vietnam",
-        "spotName": "Standard Room",
-        "img": "https://i.ibb.co/cc3H6W9/r2.jpg",
-        "description": "Our Standard Room offers comfort and convenience at an affordable price. Perfect for solo travelers or couples, it features all the essential amenities for a relaxing stay.",
-        "cost": "50 USD for a cruise",
-        "time": "October to April"
+        "countryName": "Advanced Mathematics",
+        "spotName": "Prof. Nusrat Jahan",
+        "img": "https://i.ibb.co/sjVRqmw/1.jpg",
+        "description": "An in-depth course focused on advanced mathematical concepts including calculus, linear algebra, and differential equations, designed for students aiming to excel in engineering and physical sciences.",
+        "cost": "6000 BDT",
+        "time": "10 weeks"
     },
     {
         "id": 3,
-        "countryName": "South Korea",
-        "spotName": "Cityview Deluxe Room",
-        "img": " https://i.ibb.co/SNHT5vj/r3.jpg",
-        "description": "Enjoy stunning panoramic views of the city skyline from our Cityview Deluxe Room. Featuring modern amenities and elegant decor, this spacious room is perfect for both business and leisure travelers.",
-        "cost": "3 USD for adults",
-        "time": "March to May, September to November"
+        "countryName": "English Language Proficiency",
+        "spotName": "Mr. Tanvir Ahmed",
+        "img": " https://i.ibb.co/f0MBqKf/thumb-1200-1260.png",
+        "description": "Enhance your English language skills with our comprehensive course covering grammar, vocabulary, reading, writing, and speaking exercises tailored to all proficiency levels.",
+        "cost": "4000 BDT",
+        "time": "8 weeks"
     },
     {
         "id": 4,
-        "countryName": "Philippines",
-        "spotName": "Executive Suite",
-        "img": "https://i.ibb.co/w49Y7TB/r4.png",
-        "description": "The Chocolate Hills are a geological formation in the Bohol province of the Philippines. There are at least 1,260 hills but there may be as many as 1,776 hills spread over an area of more than 50 square kilometers. They are covered in green grass that turns brown (like chocolate) during the dry season, hence the name.",
-        "cost": "2 USD for viewing deck access",
-        "time": "December to May"
+        "countryName": "Business Management Essentials",
+        "spotName": "Dr. Farzana Rahman",
+        "img": "https://i.ibb.co/4Mpgh1r/app6ykaagqpc3iciwikz.png",
+        "description": "Learn the key principles of business management, including strategic planning, organizational behavior, marketing, and financial management, to prepare for a successful career in business.",
+        "cost": "7000 BDT",
+        "time": "14 weeks"
     },
     {
         "id": 5,
-        "countryName": "Cityview Deluxe Room",
-        "spotName": "Cityview Deluxe Room",
-        "img": "https://i.ibb.co/1rTcqvn/r5.jpg",
-        "description": "Experience the epitome of luxury in our Executive Suite. With a separate living area, plush furnishings, and premium amenities, this suite offers unparalleled comfort and style.",
-        "cost": "Varies widely, approximately 30,000 to 45,000 USD for a guided climb",
-        "time": "April to May"
+        "countryName": "Basic Graphic Design",
+        "spotName": "Ms. Rifat Hasan",
+        "img": "https://i.ibb.co/ctTZxh7/scale-1200.png",
+        "description": "This course covers the basics of graphic design, including principles of design, typography, and using design software like Adobe Photoshop and Illustrator to create stunning visuals.",
+        "cost": "3000 BDT",
+        "time": "6 weeks"
     }
 ]

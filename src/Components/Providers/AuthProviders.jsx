@@ -11,6 +11,7 @@ import {
 } from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import auth from "../../../public/firebase.init";
+import axios from "axios";
 // import app from "../../../public/firebase.init";
 
 // // Context api create
@@ -71,6 +72,18 @@ const AuthProviders = ({ children }) => {
 }
 
 
+// Save User in DB
+  const saveUser = async user =>{
+
+    const currentUser = {
+      email: user?.email,
+      role: 'guest',
+      status: 'verified'
+    }
+
+    // const {data} = await axios.put(``, currentUser)
+    // return data
+  }
 
   // For LogIn
   const signIn = (email, password) => {
@@ -86,9 +99,13 @@ const AuthProviders = ({ children }) => {
   useEffect(() => {
     const unSubscribe = onAuthStateChanged(auth, (currentUser) => {
       // console.log("user from auth", currentUser);
+      saveUser(currentUser)
       setUser(currentUser);
       setLoading(false)
       // console.log(currentUser)
+
+      saveUser(currentUser)
+
     });
     return () => {
       unSubscribe();
